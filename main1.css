@@ -1,0 +1,162 @@
+body{
+
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 100px;
+}
+@keyframes popup1 {
+    from{opacity: 0%;}
+}
+#ared{
+    text-align: center;
+    height: 400px;
+    background: linear-gradient( rgb(23, 0, 94), rgb(50, 0, 94))
+}
+#ared h1{
+    color: antiquewhite;
+    transform: translateY(120px);
+    font-size: 3em;
+    animation-name: popup1;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(1,-0.10,.83,.67);
+    transition: 0.5s;
+}
+#yeah img{
+    height: 150px;
+    
+}
+#yeah{
+    justify-content: space-evenly;
+    display: flex;
+    transform: translateY(-70px);
+}
+#i1{
+    
+    animation-name: popup1;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(1,-4,.83,.67);
+    transition: 0.5s;
+}
+#i2{
+    
+    animation-name: popup1;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(1,-8,.83,.67);
+    transition: 0.5s;
+}
+#i3{
+    
+    animation-name: popup1;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(1,-12,.83,.67);
+    transition: 0.5s;
+}
+#i4{
+    
+    animation-name: popup1;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(1,-16,.83,.67);
+    transition: 0.5s;
+}
+#i5{
+    
+    animation-name: popup1;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(1,-20,.83,.67);
+    transition: 0.5s;
+}
+section{
+    text-align: center;
+    font-size: 30px;
+    transform: translateY(100px);
+}
+section p{
+    margin: 100px 0px;
+}
+.hidden.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: 0.5s;
+    color: rgb(32, 0, 160);
+    font-style: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hidden{ 
+    opacity: 0;
+    filter: blur(5x);
+    transform: translateX(-100px);
+    transition: 0.5s;
+
+    color:  rgb(23, 0, 94);
+}
+.menu-icon{
+    width: 200px;
+  position: fixed;
+  z-index: 99;
+  right: 20px;
+  padding: 50px;
+  top: 0;
+}
+
+
+#menuList{
+    flex-direction: column;
+    position: fixed;
+    z-index: 99;
+    right: 20px;
+    padding: 50px;
+    top: 100px;
+    text-decoration: none;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#menuList li{
+    background-color: rgb(33, 33, 33);
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 20px;
+    list-style: none;
+    width: 200px;
+    text-align: center;
+    transform: translateX(20px);
+    
+}
+#menuList li:hover{
+    font-size: 120%;
+    transition: 0.2s;
+}
+#menuList li a{
+     color: antiquewhite;
+     transition: 0.5s;
+    
+}
+.active{
+    
+    
+    color: black;
+    opacity: 0;
+    transition: 0.5s;
+}
+a{
+    text-decoration: none;
+}
+
+@keyframes turn{
+    to{transform: rotateY(360deg)}
+}
+@media all and (max-width: 600px){
+    body{
+        width: 600px;
+    }
+    #yeah img{
+        height: 80px;
+        transform: translateY(35px);
+    }
+    .hidden.show{
+        padding: 20px;
+    }
+    section{
+        transform: translateY(70px);
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="colonels.logo.png" class="menu-icon" onclick="togglemenu()" title="click for navbar">
+    <nav>
+      <ul id="menuList" class="active">
+        <li id="xe2"><a title="going to programm" href="colonels.programms.html">programms i use</a></li>
+        <li id="xe3"><a title="going to FAQ" href="FAQ.html">FAQ</a></li>
+        <li id="xe4"><a title="going to main page" href="main.html">main page</a></li>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<div id="google_translate_element"></div>
+      </ul>
+    </nav>
+    <video id="hhhh" controls loop> 
+        <source src="spinnyc.mp4" type="video/.mp4">
+        <source src="spinnyc.webm">
+    </video>
+    <video id="hhhh" controls loop> 
+    
+        <source src="0001-0250.avi0001-0150.webm">
+    </video>
+    <img src="untitled3.png" alt="">
+    <style>
+        video{
+            width: 100%;
+        }
+        img{
+            width: 100%;
+        }
+        .menu-icon{
+    width: 200px;
+  position: fixed;
+  z-index: 99;
+  right: 20px;
+  padding: 50px;
+  top: 0;
+}
+
+
+#menuList{
+    flex-direction: column;
+    position: fixed;
+    z-index: 99;
+    right: 20px;
+    padding: 50px;
+    top: 100px;
+    text-decoration: none;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#menuList li{
+    background-color: rgb(33, 33, 33);
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 20px;
+    list-style: none;
+    width: 200px;
+    text-align: center;
+    transform: translateX(20px);
+    
+}
+#menuList li:hover{
+    font-size: 120%;
+    transition: 0.2s;
+}
+#menuList li a{
+     color: antiquewhite;
+     transition: 0.5s;
+    
+}
+a{
+    text-decoration: none;
+}
+.active{
+    
+    
+    color: black;
+    opacity: 0;
+    transition: 0.5s;
+}
+    </style>
+    <script>
+        function togglemenu(){
+          let menu = document.getElementById('menuList')
+          menu.classList.toggle('active')
+          }
+      </script>
+</body>
+</html>

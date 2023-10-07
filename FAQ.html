@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><img src="colonels.logo.png" class="menu-icon" onclick="togglemenu()" title="click for navbar">
+    <nav>
+        <ul id="menuList" class="active">
+          <li id="xe2"><a title="going to main page" href="main.html">main page</a></li>
+          <li id="xe3"><a title="going to library" href="library.html">picture library</a></li>
+          <li id="xe4"><a title="going to programms" href="colonels.programms.html">programms i use</a></li>
+          <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<div id="google_translate_element"></div>
+        </ul>
+      </nav>
+    <div id="hx"><h1>FAQ</h1> <img src="questionable.png" alt=""><h3>Now this is the FAQ page.
+         Possible questions are answered down below.</h3></div>
+    <div id="hxhx">
+    <p class="hidden">How much do I charge?</p>
+    <pre class="hidden">
+       not much at the moment since I'm only strating out
+    </pre>
+    <p class="hidden"> How long does it take for a website to be made?</p>
+    <pre class="hidden">    I only need 1 week</p>
+        <p class="hidden">How do you receive payment?</p>
+    <pre class="hidden">    via Paypal</p>
+        <p class="hidden">Which programm do you use for the coding?</p>
+    <pre class="hidden">    Microsoft visual studio code</p>
+        <p class="hidden">Do you also publish the website?</p>
+    <pre class="hidden">    depends what kind of domain name you want and I charge extra depending on the domain.</p>
+        <p class="hidden">In which file format will you make the Website?</p>
+    <pre class="hidden">    In html/css/js files</p>
+</div>
+    <script defer src="main.js" defer></script>
+    <style>
+         .hidden.show{
+            opacity: 1;
+            filter: blur(0);
+            transform: translateX(0);
+            transition: 0.5s;
+            color: rgb(46, 48, 113);
+        }
+        .hidden{ 
+            opacity: 0;
+            filter: blur(5x);
+            transform: translateX(-100px);
+            transition: 0.5s;
+
+            color:  rgb(23, 0, 94);
+        }
+        p{
+            font-size: 1.5em;
+            transform: translate(50px);
+        }
+        pre{
+            transform: translateX(60px);
+        }
+        #hxhx{
+            transform: translateY(700px);
+        }
+        .menu-icon{
+    width: 200px;
+  position: fixed;
+  z-index: 99;
+  right: 20px;
+  padding: 50px;
+  top: 0;
+}
+
+
+#menuList{
+    flex-direction: column;
+    position: fixed;
+    z-index: 99;
+    right: 20px;
+    padding: 50px;
+    top: 100px;
+    text-decoration: none;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#menuList li{
+    background-color: rgb(33, 33, 33);
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 20px;
+    list-style: none;
+    width: 200px;
+    text-align: center;
+    transform: translateX(20px);
+    
+}
+#menuList li:hover{
+    font-size: 120%;
+    transition: 0.2s;
+}
+#menuList li a{
+     color: antiquewhite;
+     transition: 0.5s;
+    
+}
+.active{
+    
+    
+    color: black;
+    opacity: 0;
+    transition: 0.5s;
+}
+#hx{
+    height: 300px;
+    background: linear-gradient(rgb(255, 77, 0),rgb(255, 157, 0));
+    text-align:center;
+}
+h1{
+padding-top: 90px;
+font-size: 6em;
+}
+a{
+    text-decoration: none;
+}
+    </style>
+    <script>
+        function togglemenu(){
+          let menu = document.getElementById('menuList')
+          menu.classList.toggle('active')
+          }
+      </script>
+</body>
+</html>
